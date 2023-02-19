@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Harir;
+    src: url('/font/harir.otf') format("openType");
+}
+
+* {
+    font-family: Harir;
+}
+
+body {
+    background-color: #fdfbf0;
+}
+
+.custom-navbarLinks {
+    flex-grow: 0;
+}
+
+.custom-navbarStyle {
+        background-color: #f2ead9;
+        height: 135px;
+}
+
+.custom-logo {
+    margin-right: 50px;
+    height: 100px;
+    width: 300px;
+}
+
+.nav-item a {
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: 75px;
+}
+
+.custom-foundationMotto {
+    font-size: 96px;
+}
+.custom-foundationDescription {
+    font-size: 26px;
+}
+
+@keyframes moving-leftSide {
+    100% {
+        background-position: 0 -100%;
+    }
+}
+
+#custom-leftSide {
+    padding: 0;
+    opacity: 0.4;
+    background-image: url('/images/leftStyle.webp');
+    background-size: 65%;
+    background-repeat: repeat-y;
+    animation: moving-leftSide 24s infinite;
+}
+
+#custom-flag {
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.custom-rightSide {
+    background-image: url('/images/circle.webp');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.col-2 {
+    min-height: 83vh;
+}
+
+#custom-middle {
+    text-align: left;
+    margin-top: 100px
+}
+
+.btn-primary {
+    padding-top: 15px;
+    width: 200px;
+    background-color: #836b64;
+    --bs-btn-border-color: #836b64;
+    --bs-btn-hover-bg: #836b64;
+    --bs-btn-hover-border-color: #836b64;
+    --bs-btn-bg: #836b64;
+    --bs-btn-active-bg: #836b64;
+    --bs-btn-active-border-color: #836b64;
+}
